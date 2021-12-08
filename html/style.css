@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  color: aliceblue;
+}
+
+.container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#010c29), to(#3d3d61));
+  background: linear-gradient(#010c29, #3d3d61);
+  width: 100%;
+  height: 100vh;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url(/star.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.4rem 2.6rem;
+  padding-right: 0;
+  z-index: 9999999;
+}
+
+.navbar .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 2.6rem;
+}
+
+.navbar .upper .menu_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #555;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  overflow: hidden;
+  position: relative;
+  z-index: 999999999999999;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+
+.navbar .upper .menu_icon span {
+  width: 26px;
+  height: 2.4px;
+  background-color: #fff;
+  border-radius: 2px;
+  position: absolute;
+  -webkit-transition: all 0.3s !important;
+  transition: all 0.3s !important;
+}
+
+.navbar .upper .menu_icon span:first-child {
+  width: 20px;
+  top: calc(1.73333px);
+}
+
+.navbar .upper .menu_icon span:last-child {
+  width: 22px;
+  bottom: calc(1.73333px);
+}
+
+.navbar .upper .nav_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffff10;
+  padding: 0rem 0.8rem;
+  position: relative;
+  -webkit-box-shadow: 3px 3px 5px #00000023;
+          box-shadow: 3px 3px 5px #00000023;
+}
+
+.navbar .upper .nav_menu .nav_item {
+  padding: 1rem 1.6rem;
+  position: relative;
+}
+
+.navbar .upper .nav_menu .nav_item a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  padding: 8rem 6rem;
+}
+
+.main .title h1 {
+  font-family: cursive;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  font-size: 2.3rem;
+}
+
+@media only screen and (max-width: 1321px) {
+  .main .title h1 {
+    padding: 8rem 3rem;
+  }
+  .main .title h1 .title h1 {
+    font-size: 1.2rem;
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .main .title h1 {
+    padding: 8rem 3rem;
+  }
+  .main .title h1 .title h1 {
+    font-size: 1.1rem;
+    max-width: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
